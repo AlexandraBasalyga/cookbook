@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    line-height: 2;
+    padding-top: 94px;
+}
+
+/* Навигация */
+.navbar {
+    background: #ff4388;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.navbar button {
+    background-color: #ff4388;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;   
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Баннер */
+.banner {
+    background: 
+    linear-gradient(rgba(26, 25, 25, 0.8), rgba(26, 25, 25,0.3)),
+    url('images/kitchen.jpg') no-repeat center/cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.banner p {
+    font-size: 18px;  
+}
+
+.banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff4388;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;     
+}
+
+/* Контент1 */
+.content {
+    text-align: center;
+    color: #333;
+}
+
+.content.section1 {
+    padding: 50px 20px 20px 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* чтобы на маленьких экранах карточки переносились */
+    margin-top: 20px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 10px;
+    width: 250px; /* ширина карточки */
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px; 
+    margin: 0;  
+}
+
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; 
+    border-radius: 6px;
+}
+
+/* Контент2 */
+.content.section2 {
+    padding: 50px 20px 50px 20px;
+}
+
+.section2 ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.section2 li {
+    margin: 10px 0;
+}
+
+/* Форма */
+.form-section {
+    background: #ffd1e2;
+    padding: 35px 20px 50px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-section h2 {
+    margin-bottom: 15px; 
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+input, textarea {
+    padding: 15px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;          /* высота поля */
+    resize: vertical;        /* можно менять размер только по вертикали */
+    overflow-y: auto;        /* появляется полоса прокрутки при переполнении */
+}
+
+.recipe-type {
+    display: flex;
+    justify-content: space-between; /* равномерное распределение по ширине */
+    gap: 0; /* промежутки можно убрать, если space-between делает их равномерно */
+    width: 100%; /* растягиваем на всю ширину формы */
+    accent-color: #ff4388;
+}
+
+.recipe-type label {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* текст по центру внутри своей области */
+    flex: 1;                 /* каждая кнопка занимает одинаковую долю */
+    gap: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background: #ff4388;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Подвал */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
