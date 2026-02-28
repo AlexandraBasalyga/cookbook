@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарная книга</title>
+    <link rel="stylesheet" href="cookbook.css">
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <header>
+        <nav class="navbar">
+            <h1> Кулинарная книга</h1>
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Рецепты</a></li>
+                <li><a href="#">Мои рецепты</a></li>
+                <li><button><img src="images/search.png" alt="Поиск" width="20" height="20"></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <h1>Добро пожаловать в мир вкусных рецептов!</h1>
+        <p>Готовьте с удовольствием вместе с нами</p>
+        <button>Смотреть рецепты</button>
+    </section>
+
+    <!-- Секция контент 1 -->
+    <section class="content section1">
+        <h2>Рецепты</h2>
+        <div class="cards">
+            <div class="card">
+                <a href="breakfast.html">
+                    <img src="images/breakfast.jpg" alt="Завтрак" class="card-img">
+                    <h3>Завтрак</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="lunch.html">
+                    <img src="images/lunch.jpg" alt="Обед" class="card-img">
+                    <h3>Обед</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="dinner.html">
+                    <img src="images/dinner.jpg" alt="Ужин" class="card-img">
+                    <h3>Ужин</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="snacks.html">
+                    <img src="images/snacks.jpg" alt="Закуски" class="card-img">
+                    <h3>Закуски</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="dessert.html">
+                    <img src="images/dessert.jpg" alt="Десерты" class="card-img">
+                    <h3>Десерты</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контент 2 -->
+    <section class="content section2">
+        <h2>Почему выбирают нас?</h2>
+        <ul>
+            <li>✔ Простые и вкусные рецепты</li>
+            <li>✔ Подробные инструкции</li>
+            <li>✔ Фото каждого блюда</li>
+            <li>✔ Возможность добавить свой рецепт</li>
+        </ul>
+    </section>
+
+    <!-- Секция с формой -->
+    <section class="form-section">
+        <h2>Добавить рецепт</h2>
+        <form>
+            <input type="text" placeholder="Название блюда" required>
+            <div class="recipe-type">
+                <label><input type="radio" name="type" value="Завтрак" required> Завтрак</label>
+                <label><input type="radio" name="type" value="Обед"> Обед</label>
+                <label><input type="radio" name="type" value="Ужин"> Ужин</label>
+                <label><input type="radio" name="type" value="Закуски"> Закуски</label>
+                <label><input type="radio" name="type" value="Десерты"> Десерты</label>
+            </div>
+            <textarea placeholder="Описание рецепта" required></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>© 2026 Кулинарная книга | Все права защищены</p>
+    </footer>
+
+</body>
+</html>
