@@ -20,7 +20,6 @@ body {
     padding: 15px 30px;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000; 
     flex-wrap: wrap;
@@ -88,15 +87,12 @@ body {
     padding: 50px 20px 0px 20px;
 }
 
-.content.section1 h2{
-    padding-bottom: 20px;
-}
 .cards {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .card {
@@ -129,7 +125,6 @@ body {
 
 .section2 ul {
     list-style: none;
-    padding-top: 20px;
 }
 
 .section2 li {
