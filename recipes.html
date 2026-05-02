@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+     
+     <header>
+        <nav class="navbar">
+            <h1> Кулинарная книга</h1>
+            <ul class="menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="myrecipes.html">Мои рецепты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="filter">
+        <aside class="filter-panel">
+            <div class="filter-panel-header">
+                <h2>Категории</h2>
+            </div>
+            
+            <div class="filter-group" id="recipeTypeFilter">
+                <label class="filter-option">
+                    <input type="radio" name="mealType" value="all" checked>
+                    <span>🍽️ Всё</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="mealType" value="breakfast">
+                    <span>🍳 Завтрак</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="mealType" value="lunch">
+                    <span>🍲 Обед</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="mealType" value="dinner">
+                    <span>🍝 Ужин</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="mealType" value="snack">
+                    <span>🥗 Закуски</span>
+                </label>
+                <label class="filter-option">
+                    <input type="radio" name="mealType" value="dessert">
+                    <span>🍰 Десерты</span>
+                </label>
+            </div>
+        </aside>
+        
+        <main class="recipes-content" id="recipesContent">
+            <div class="content-header">
+                <h1 id="recipeTitle">Все рецепты <span class="recipe-count" id="recipeCount"></span></h1>
+            </div>
+
+             <div class="recipe-grid" id="recipeGrid"> </div>
+             
+            <div class="load-more">
+                <button class="load-more-btn" id="showMoreBtn">Показать еще рецепты</button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2026 Кулинарная книга | Все права защищены</p>
+    </footer>
+
+    <script src="recipes.js"></script>
+
+</body>
+</html>

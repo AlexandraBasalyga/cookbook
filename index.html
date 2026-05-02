@@ -8,56 +8,55 @@
 </head>
 <body>
 
-    <!-- Навигационное меню -->
     <header>
         <nav class="navbar">
             <h1> Кулинарная книга</h1>
             <ul class="menu">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Рецепты</a></li>
-                <li><a href="#">Мои рецепты</a></li>
-                <li><button><img src="images/search.png" alt="Поиск" width="20" height="20"></button></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="recipes.html">Рецепты</a></li>
+                <li><a href="myrecipes.html">Мои рецепты</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Баннер -->
     <section class="banner">
         <h1>Добро пожаловать в мир вкусных рецептов!</h1>
         <p>Готовьте с удовольствием вместе с нами</p>
-        <button>Смотреть рецепты</button>
+        <a href="recipes.html">
+            <button>Смотреть рецепты</button>
+        </a>
+          
     </section>
 
-    <!-- Секция контент 1 -->
     <section class="content section1">
         <h2>Рецепты</h2>
         <div class="cards">
             <div class="card">
-                <a href="breakfast.html">
+                <a href="recipes.html?category=breakfast">
                     <img src="images/breakfast.jpg" alt="Завтрак" class="card-img">
                     <h3>Завтрак</h3>
                 </a>
             </div>
             <div class="card">
-                <a href="lunch.html">
+                <a href="recipes.html?category=lunch">
                     <img src="images/lunch.jpg" alt="Обед" class="card-img">
                     <h3>Обед</h3>
                 </a>
             </div>
             <div class="card">
-                <a href="dinner.html">
+                <a href="recipes.html?category=dinner">
                     <img src="images/dinner.jpg" alt="Ужин" class="card-img">
                     <h3>Ужин</h3>
                 </a>
             </div>
             <div class="card">
-                <a href="snacks.html">
+                <a href="recipes.html?category=snack">
                     <img src="images/snacks.jpg" alt="Закуски" class="card-img">
                     <h3>Закуски</h3>
                 </a>
             </div>
             <div class="card">
-                <a href="dessert.html">
+                <a href="recipes.html?category=dessert">
                     <img src="images/dessert.jpg" alt="Десерты" class="card-img">
                     <h3>Десерты</h3>
                 </a>
@@ -65,7 +64,6 @@
         </div>
     </section>
 
-    <!-- Секция контент 2 -->
     <section class="content section2">
         <h2>Почему выбирают нас?</h2>
         <ul>
@@ -76,27 +74,28 @@
         </ul>
     </section>
 
-    <!-- Секция с формой -->
     <section class="form-section">
         <h2>Добавить рецепт</h2>
-        <form>
-            <input type="text" placeholder="Название блюда" required>
+        <form id="formSection">
+            <input type="text" id = "title" placeholder="Название блюда">
+            <input type="number" id="time" min="0" max="250" placeholder="Время приготовления (мин)">
             <div class="recipe-type">
-                <label><input type="radio" name="type" value="Завтрак" required> Завтрак</label>
+                <label><input type="radio" name="type" value="Завтрак"> Завтрак</label>
                 <label><input type="radio" name="type" value="Обед"> Обед</label>
                 <label><input type="radio" name="type" value="Ужин"> Ужин</label>
                 <label><input type="radio" name="type" value="Закуски"> Закуски</label>
                 <label><input type="radio" name="type" value="Десерты"> Десерты</label>
             </div>
-            <textarea placeholder="Описание рецепта" required></textarea>
+            <textarea id = "description" placeholder="Описание рецепта"></textarea>
             <button type="submit">Отправить</button>
         </form>
     </section>
 
-    <!-- Подвал -->
     <footer>
         <p>© 2026 Кулинарная книга | Все права защищены</p>
     </footer>
+
+    <script src="cookbook.js"></script>
 
 </body>
 </html>
